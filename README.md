@@ -26,7 +26,7 @@ This application has no inherent utility, and is considered a toy as a demo work
 Please ensure your cluster is configured to support Service Type=Loadbalancer for UI access
 
 ```
-kubectl apply -f https://apnex.io/graph/deploy.yaml
+kubectl apply -f https://labops.sh/graph/deploy.yaml
 ```
 
 This will deploy the `graph-server` pod into the current namespace (i.e default).  
