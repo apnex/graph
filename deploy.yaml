@@ -20,10 +20,10 @@ spec:
   hostNetwork: false
   containers:
   - name: client
-    image: apnex/graph-client
+    image: australia-southeast1-docker.pkg.dev/labops/apnex/graph-client
     command: ["/root/start.sh"]
   - name: server
-    image: apnex/graph-server
+    image: australia-southeast1-docker.pkg.dev/labops/apnex/graph-server
     command: ["/root/start.sh"]
 ---
 kind: Service
