@@ -8,7 +8,7 @@ UI demo at: http://draw.apnex.io
 
 ---
 ### What is it
-`graph` is a Kubernetes application that dynamically provisions micro-router PODs into the current namespace.  
+`graph` is a Kubernetes application that dynamically provisions micro-router `nodes` (pods) into the current namespace.  
 These `nodes` are constructed via a drag-and-drop style drawing UI along with network connections between them.
 
 `graph` also:  
