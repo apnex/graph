@@ -56,6 +56,15 @@ kubectl delete pods -l type=node
 ```
 
 ---
+### Uninstall
+Simply delete the `graph-server` and any remaining `nodes`
+
+```
+kubectl delete -f https://labops.sh/graph/deploy.yaml
+kubectl delete pods -l type=node
+```
+
+---
 ### Interface Usage
 #### Nodes
 - Click and hold `right-click` on the dock and drag mouse to `create` new `node` onto page
