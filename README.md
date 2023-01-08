@@ -1,6 +1,6 @@
 ## `graph`
 
-Prototype interactive SVG frontend UI for the `graph` API system
+Prototype visual canvas application for designing and deploying demo micro-services to k8s  
 
 ![draw-ui](topology1.svg)
 
