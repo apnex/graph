@@ -14,14 +14,16 @@ These `nodes` are constructed via a drag-and-drop style drawing UI along with ne
 `graph` also:  
 -- Is lightweight  
 -- Creates and destroys `nodes` on demand within a namespace  
--- Responsive - leverages websockets for dynamic client/server state  
+-- Responsive - leverages websockets for dynamic client <-> server state  
 
 This application has no inherent utility, and is considered a toy as a demo workload within a cluster.
 
 ---
 ### Install
 `graph` requires a functioning Kubernetes cluster to deploy to.  
-**Note:** Please ensure your cluster is configured to support Service Type=Loadbalancer for UI access
+
+**Note:**  
+Please ensure your cluster is configured to support Service Type=Loadbalancer for UI access
 
 ```
 kubectl apply -f https://apnex.io/graph/deploy.yaml
@@ -37,8 +39,15 @@ kubectl get services svc-graph-server
 ```
 Now point your browser at `http://EXTERNAL-IP` 
 
-**Note:**
-Currently if you refresh your browser you will lose your visual topology.
+From here, check out **Interface Usage** and begin drawing your micro-services topology.  
+
+You can monitor live creation of `nodes` in the current namespace with a `watch`:  
+```
+watch -n 2 "kubectl get pods"
+```
+
+**Note:**  
+Currently if you refresh your browser you will lose your visual topology.  
 However, the `nodes` will still be running within your cluster.
 
 Use the following command to clear up any orphaned `nodes` in Kubernetes:
